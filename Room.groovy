@@ -1,6 +1,6 @@
 class Room {
-    Integer RoomID
-    String RoomName
-    String RoomDescription
+    Integer roomID
+    String roomName
+    String roomDescription
 
 }
