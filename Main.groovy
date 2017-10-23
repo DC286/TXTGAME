@@ -1,8 +1,8 @@
 
 Room startingRoom =  new Room(
     roomID: 1,
-    title: "EastTowerRoom",
-    description:'This is Room ET'
+    title: "CastleEntrance",
+    description:'This is CE'
 )
 
 Room roomTwo =  new Room (
