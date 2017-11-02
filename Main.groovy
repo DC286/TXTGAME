@@ -51,7 +51,9 @@ while (keepPlaying) {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
     println "This is the " + currentRoom.title
     println currentRoom.description
+    println "Exits: " + currentRoom.connections.keySet()
 
+    print "Enter the direction you want to go: "
 
     def userInput = br.readLine()
       if (userInput == 'q') {
