@@ -1,45 +1,44 @@
 
 Room startingRoom =  new Room(
     roomID: 1,
-    title: "The ruins of Hallsworth",
-
-    description: ''''You walk through the damaged gate. You look to your right and you see stairs lead up. You look to you left and you see a door.'''
+    title: "the ruins of Castle Hallworth",
+    description: ''' You walk through the damaged gate. You look to your right and see stairs leading up. You look to you left and you see a door. '''
 )
 
 Room roomTwo =  new Room (
     roomID: 2,
     title: "Barracks",
-    description: ''' You've entered the barracks. There's 5 rows of beds. There's corpse's laying in some and in others are empty. In one bed lies a dented suit of armor.'''
+    description: ''' You've entered the barracks. There's 5 rows of beds. There are corpse's laying in some and others are empty. In one bed lies a dented suit of armor. '''
 
     )
 
 Room   roomThree =  new Room (
     roomID: 3,
     title: "CentralTowerRoom",
-    description: '''You walk in and see what looks like the remains of a fight. There's a corpse with a missing head laying in the middle of the room. In the corpse's hand is a blood-stained sword.'''
+    description: ''' You walk in and see the remnants of a fight. There's a corpse with a missing head laying in the middle of the room. Clutched in its hand is a blood-stained sword. '''
     )
 
 Room  roomFour = new Room (
     roomID: 4,
     title: "WestTowerRoom",
-    description: '''You walk in and see a big hole in the wall. There's dried blood along the walls. In front of one of the arrow loops There is quiver with 5 arrows remaining and a bow.'''
+    description: ''' You walk in and see a large hole in the wall. There's dried blood splattered on the walls. Laying against an arrow loop on the left side of the room, there's a quiver containing 5 arrows and laying next to it, is a bow. '''
     )
 
 Room  roomFive = new Room (
     roomID: 5,
     title: "Armory",
-    description: '''You enter the armory. You see empty racks that used to have weapons. On the wall in front of you there is a cracked shield'''
+    description: ''' You enter the armory. There are empty weapon racks on both the right and left sides of the room. In front of you are two empty armor stands. In the between the two armor stands, hangs a cracked shield. '''
     )
 Room roomSix = new Room (
         roomID: 6,
         title: "SouthTowerRoom",
-        description: '''You walk in see that there's barely any damage to the room and no gore or blood.'''
+        description: ''' You walk in and see that there's barely any damage done to the room. There're no bodies or blood. You look at the door behind you and pieces of broken wood nailed to the door. '''
 )
 
 
-startingRoom.connections = ['e':roomThree, 'w':roomFour]
+startingRoom.connections = ['w':roomFour, 'e':roomThree]
 roomTwo.connections = ['s':roomSix, 'n':roomThree]
-roomThree.connections = ['s':roomSix, 'w':roomFour, 'se':roomTwo]
+roomThree.connections = ['s':roomSix, 'w':roomFour, 'se':roomTwo, 'n': roomFive]
 roomFour.connections = ['e':roomThree]
 roomFive.connections = ['s':roomThree]
 roomSix.connections = ['n':roomThree, 'ne':roomTwo]
