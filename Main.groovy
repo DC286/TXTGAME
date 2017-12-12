@@ -3,41 +3,41 @@ Room startingRoom =  new Room (
     roomID: 1,
     title: "the ruins of Castle Hallsworth",
     description: ''' You walk through the damaged gate. You look to your right and see stairs leading up. You look to you left and you see a door. In front of you, you see a man in torn up armor with blood stains leaning against the wall. ''',
-    npc: WoundedSurvivor
+    npc: "WoundedSurvivor"
     )
 
 Room roomTwo =  new Room (
     roomID: 2,
     title: "Barracks",
     description: ''' You've entered the barracks. There's 5 rows of beds. There are corpse's laying in some and others are empty. A jackal and a goblin appear from the beds.''',
-    npc: Goblin
+    npc: "Goblin"
     )
 
 Room roomThree =  new Room (
     roomID: 3,
     title: "CentralTowerRoom",
     description: ''' You walk in and see the remnants of a fight. There's a corpse with a missing head laying in the middle of the room. Clutched in its hand is a blood-stained sword. ''',
-    npc: Jackal
+    npc: "Jackal"
     )
 
 Room roomFour = new Room (
     roomID: 4,
     title: "WestTowerRoom",
     description: ''' You walk in and see a large hole in the wall. There's dried blood splattered on the walls. Laying against an arrow loop on the left side of the room, there's a quiver containing 5 arrows and laying next to it, is a bow. ''',
-    npc: CrazedSoldier
+    npc: "CrazedSoldier"
     )
 
 Room roomFive = new Room (
     roomID: 5,
     title: "Armory",
     description: ''' You enter the armory. There are empty weapon racks on both the right and left sides of the room. In front of you are two empty armor stands. In the between the two armor stands, hangs a cracked shield. ''',
-     npc: Bandit
+     npc: "Bandit"
     )
 Room roomSix = new Room (
         roomID: 6,
         title: "SouthTowerRoom",
         description: ''' You walk in and see that there's barely any damage done to the room. There're no bodies or blood. You look at the door behind you and pieces of broken wood nailed to the door. ''',
-        npc: Ogre
+        npc: "Ogre"
         )
 
 
@@ -65,7 +65,7 @@ npcs.each {
 }
 
 Npc Ogre = new Npc (
-        name: "Ogre",
+        name: "Ogar",
         health: 100,
         isAggressive: true,
         multiplier: 5,
@@ -77,7 +77,7 @@ Npc Ogre = new Npc (
 )
 
 Npc Jackal = new Npc (
-        name: "Jackal",
+        name: "Heathen",
         health: 80,
         isAggressive: true,
         multiplier: 3,
@@ -88,7 +88,7 @@ Npc Jackal = new Npc (
 )
 
 Npc Goblin = new Npc (
-        name: "Goblin",
+        name: "Grendal",
         health: 65,
         isAggressive: true,
         multiplier: 3,
@@ -99,7 +99,7 @@ Npc Goblin = new Npc (
 )
 
 Npc  CrazedSoldier  = new Npc (
-        name: "Crazed Soldier",
+        name: "Captain Lance",
         health: 85,
         isAggressive: true,
         multiplier: 2,
@@ -109,8 +109,8 @@ Npc  CrazedSoldier  = new Npc (
 
 )
 
-Npc WoundedSurvivor = new Npc (
-        name: "Wounded Survivor",
+Npc Survivor = new Npc (
+        name: "Haven",
         health: 25,
         isAggressive: false,
         multiplier: 0,
@@ -119,7 +119,7 @@ Npc WoundedSurvivor = new Npc (
         TotalDamage: 0
 )
 Npc Bandit = new Npc (
-        name: "Bandit",
+        name: "Castile",
         health: 100,
         isAggressive: true,
         multiplier: 3,
