@@ -1,3 +1,9 @@
+MainPlayer MainPlayer = new MainPlayer(
+        health: 100,
+        remainingHealth: 100,
+        multiplier: 5,
+
+)
 
 Room startingRoom =  new Room (
     roomID: 1,
@@ -91,13 +97,6 @@ Npc Ogre = new Npc (
         TotalDamage: 0
 )
 
-MainPlayer MainPlayer = new MainPlayer(
-        health: 100,
-        remainingHealth: 100,
-        multiplier: 5,
-        name: "Explorer"
-
-)
 
 
 
