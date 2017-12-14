@@ -2,9 +2,8 @@ class Room {
     Integer roomID
     String title
     String description
-    String npc
+    Npc npc
 
-    Map<String,Room> Connections
-
+    Map<String,Room> connections
 }
 

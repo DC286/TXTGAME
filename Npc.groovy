@@ -3,10 +3,7 @@ class Npc {
     Integer health
     Boolean isAggressive
     Integer multiplier
-    Boolean Living
+    Boolean living
     Integer AttackNumber
     Integer TotalDamage
-
-
-
 }
