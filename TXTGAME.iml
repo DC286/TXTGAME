@@ -9,5 +9,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="groovy-2.4.11" level="application" />
     <orderEntry type="library" name="gant-1.9.11" level="application" />
+    <orderEntry type="library" name="jre1.8" level="project" />
+    <orderEntry type="library" name="jdk1.8" level="project" />
+    <orderEntry type="library" name="groovy-2.4.13" level="application" />
   </component>
 </module>
